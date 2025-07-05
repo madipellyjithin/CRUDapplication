@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CRUD-APP</title>
+</head>
+
+<body>
+    <h1>Hospital Management <br> CRUD application</h1>
+    <table>
+      <th>Actions</th>
+      <tr>
+        <td>
+          <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div>
+              <label for="patientId">Patient Id</label>
+              <input
+                type="text & number"
+                name="patientId"
+                id="patientId"
+                placeholder="Enter your patient id"
+              />
+            </div>
+            <div>
+              <label for="patient">Patient Name</label>
+              <input
+                type="text & number"
+                name="patient"
+                id="patient"
+                placeholder="Enter your patient name"
+              />
+            </div>
+            <div>
+              <label for="visitors">Patient visitors</label>
+              <input
+                type="number"
+                name="visitors"
+                id="visitors"
+                placeholder="Enter your patient visitors"
+              />
+            </div>
+            <div>
+              <label for="perHour"> Patient visiting time in hours</label>
+              <input
+                type="number"
+                name="perHour"
+                id="perHour"
+                placeholder="Enter your patient visiting per hour"
+              />
+            </div>
+            <div class="form_action--button">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+          <td>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Patient Id</th>
+                        <th>Patient Name</th>
+                        <th>Patient Visitors</th>
+                        <th>Patient Visiting time in hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+          </td>
+        </td>
+      </tr>
+    </table>
+    <div class="section">
+      <li>Copyright2025@MadipellyJitthin. all Rights are reserved.</li>
+      <li>Privacy policy. Terms and conditions.</li>
+    </div>
+</body>
+<script src="/script.js"></script>
+
+</html>
